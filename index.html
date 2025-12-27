@@ -1282,7 +1282,7 @@
 
     async function shareContent(item) {
         if (!item) return;
-        const shareData = { title: item.title || item.name, text: `Check out "${item.title || item.name}" on HUNTHUNT!`, url: window.location.href };
+        const shareData = { title: item.title || item.name, text: `Check out "${item.title || item.name}" on VSMOVIE!`, url: window.location.href };
         if (navigator.share) {
             try { await navigator.share(shareData); } catch (err) { console.error('Error sharing content:', err); }
         } else {
